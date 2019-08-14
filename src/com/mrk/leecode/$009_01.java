@@ -1,13 +1,13 @@
-package com.mrk;
+package com.mrk.leecode;
 
 /**
  * TODO
  *
  * @author 王一鸣
  */
-public class $09_01 {
+public class $009_01 {
     public static void main(String[] args) {
-        System.out.println(new $09_01().isPalindrome(1234321));
+        System.out.println(new $009_01().isPalindrome(1234321));
     }
     public boolean isPalindrome(int x) {
         boolean result = true;

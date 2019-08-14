@@ -1,17 +1,17 @@
-package com.mrk;
+package com.mrk.leecode;
 
 /**
  * TODO
  *
  * @author 王一鸣
  */
-public class $07_02 {
+public class $007_02 {
     public static void main(String[] args) {
-        System.out.println(new $07_02().reverse(123));
-        System.out.println(new $07_02().reverse(321));
-        System.out.println(new $07_02().reverse(-321));
-        System.out.println(new $07_02().reverse(2147483647));
-        System.out.println(new $07_02().reverse(-2147483647));
+        System.out.println(new $007_02().reverse(123));
+        System.out.println(new $007_02().reverse(321));
+        System.out.println(new $007_02().reverse(-321));
+        System.out.println(new $007_02().reverse(2147483647));
+        System.out.println(new $007_02().reverse(-2147483647));
     }
     public int reverse(int x) {
         int rev = 0;
