@@ -18,23 +18,23 @@ public class $021_01 {
         StringBuilder str = new StringBuilder();
         while (l1 != null || l2 != null) {
             if (l2 == null) {
-                str.append(l1.val + ",");
+                str.append(l1.val).append(",");
                 l1 = l1.next;
             } else if (l1 == null) {
-                str.append(l2.val + ",");
+                str.append(l2.val).append(",");
                 l2 = l2.next;
             } else if (l2.val < l1.val) {
-                str.append(l2.val + ",");
+                str.append(l2.val).append(",");
                 l2 = l2.next;
             } else {
-                str.append(l1.val + ",");
+                str.append(l1.val).append(",");
                 l1 = l1.next;
             }
 
         }
         if (!"".equals(str.toString())){
-            String[] arr = str.toString().split("\\,");
-            if (arr != null && arr.length > 0){
+            String[] arr = str.toString().split(",");
+            if (arr.length > 0){
                 for (int i = arr.length - 1; i >= 0; i--) {
                     if (result == null) {
                         result = new ListNode(Integer.parseInt(arr[i]));
